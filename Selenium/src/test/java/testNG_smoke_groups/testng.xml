@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmokeAndGroupSuite">
+    
+    <!-- Run PhpTravels login test -->
+    <test name="PhpTravelsLoginTest">
+        <classes>
+            <class name="testNG_smoke_groups.PhpTravelsLoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Run Smoke group only -->
+    <test name="SmokeTestsOnly">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNG_smoke_groups.SmokeTests"/>
+        </classes>
+    </test>
+
+    <!-- Run tests that depend on Smoke group -->
+    <test name="DependentTests">
+        <classes>
+            <class name="testNG_smoke_groups.DependentTests"/>
+        </classes>
+    </test>
+
+</suite>

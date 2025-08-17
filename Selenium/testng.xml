@@ -3,10 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNG_Demo.Annotations"/>
-      <class name="testNG_Demo.DemoWorkShop"/>
-      <class name="testNG_Demo.PhpTravelsAdminTest"/>
-      <class name="testNG_Demo.Swag_Labs_loginPage"/>
+    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
